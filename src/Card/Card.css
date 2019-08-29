@@ -1,3 +1,17 @@
 .inventory-content {
   background-color: grey
 }
+
+.order-history {
+  /* display: inline-block; */
+  box-sizing: border-box;
+  border: 3px solid grey;
+  padding: 10px;
+}
+
+.image {
+  border: 1px solid rgb(223, 222, 222);
+  height: 150px; 
+  /* width: 84%; */
+  align-content: auto;
+}

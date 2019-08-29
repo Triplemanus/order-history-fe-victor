@@ -1,20 +1,20 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ id, name, description, price, image, deleteId }) => {
-
+const Card = ({ id, image, name, description, price, deleteOrder }) => {
+  console.log('Image url is ', {image})
   return (
-    <section>
+    <section className='order-history'>
       <div>
-        <img src="{image}" alt="Purchased product" />
+        <img className="image" src={image} alt="Purchased product" />
       </div>
       <article className="inventory-content">
-        <h3>{this.name}</h3>
-        <p>{this.description}</p>
+        <h3>{name}</h3>
+        <p>{description}</p>
       </article>
       <article>
-        <h2>{this.price}</h2>
-        <button >Remove From History</button>
+        <h2>${price}</h2>
+        <button onClick={() => deleteOrder(id)}>Remove From History</button>
       </article>
     </section>
     )
